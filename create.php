@@ -5,9 +5,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 		//mysql credentials
 //	require_once 'login.php';
 $mysql_host = "localhost";
-$mysql_database ="CRUD";
-$mysql_username = "kirthanak26";
-$mysql_password = "Purple1!";
+$mysql_database ="Ellie";
+$mysql_username = "ellie011";
+$mysql_password = "Ebl101502";
 	//delcare PHP variables
 	$title = $_POST["title"];
 	$director = $_POST["director"];
