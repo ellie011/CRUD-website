@@ -22,7 +22,7 @@ else
         $sql = "SELECT * FROM student WHERE studentID='" . $_POST['update'] . "'";
         $result = $conn->query($sql);
 
-        $book_ID = $row[0];
+        $movie_ID = $row[0];
         $title = $row[1];
         $director = $row[2];
         $genre = $row[3];
@@ -34,10 +34,10 @@ else
 		            {
                         // HTML to display the form on this page.
                         echo"Edit the information for".$row['title'].".";
-	                    echo "<TABLE><TR><TH>book_ID</TH><TH>title</TH><TH>director</TH><TH>genre</TH></TR>";
+	                    echo "<TABLE><TR><TH>movie_ID</TH><TH>title</TH><TH>director</TH><TH>genre</TH></TR>";
                         echo "<TR>";
-	                    echo "<TD>".$row['book_ID']. "</TD><TD>". $row['title']. "</TD><TD>". $row['director']. "</TD><TD>".$row['genre'] ."</TD></TR>";
-	                    echo "<TR><TD><input type='text' value=".$row['book_ID']." director='field left' readonly></TD>";
+	                    echo "<TD>".$row['movie_ID']. "</TD><TD>". $row['title']. "</TD><TD>". $row['director']. "</TD><TD>".$row['genre'] ."</TD></TR>";
+	                    echo "<TR><TD><input type='text' value=".$row['movie_ID']." director='field left' readonly></TD>";
 	                    echo "<form action='changeItem.php' method = 'post'>";
                         echo "<TD><input type='text' placeholder='Full Name' name='lastName' class='advancedSearchTextBox'></TD>";
                         echo "<TD><select id='select' name='genre'>";
